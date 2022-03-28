@@ -479,15 +479,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2070784193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfe10c140fabbe4bbea8433e36a9618, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ac3e18b14d4d2d4aace390ec8297ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1776882028}
-  - {fileID: 2052591612}
-  - {fileID: 2046041833}
-  - {fileID: 1898364870}
-  - {fileID: 1276283000}
+  speed: 2
+  accuracy: 0.01
+  goal: {fileID: 1776882028}
 --- !u!54 &2070784195
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Move2.cs" />
+    <Compile Include="Assets\Script\Correção.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
