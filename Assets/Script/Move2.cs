@@ -22,22 +22,22 @@ public class Move2 : MonoBehaviour
             waitCounter += Time.deltaTime;
             if(waitCounter < waitTime)
             {
-                return;
+                return; 
             }
-            waiting = false;
+            waiting = false;  // Prossegue pro próx ponto
         }
         Transform wp = waypoints[wpIndex];
         if(Vector3.Distance(transform.position, wp.position) < 0.01f) // Objeto chega ao waypoint
         {
             transform.position = wp.position;
             waitCounter = 0f;
-            waiting = true;
+            waiting = true; // Espera e confirma o prox waypoint
 
             wpIndex = (wpIndex + 1) % waypoints.Length; // Define o próximo waypoint    
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, wp.position, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, wp.position, speed * Time.deltaTime); // Objeto se move até o waypoint
             transform.LookAt(wp.position); // Isso faz o Objeto se adaptar a mudança de posição do ponto
         }
     }
